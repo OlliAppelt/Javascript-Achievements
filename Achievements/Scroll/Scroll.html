@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>attached a click event to the document.<br>Click anywhere in the document.</p>
+
+    <p id="demo"></p>
+
+    <script>
+    document.addEventListener("click", function(){
+      document.getElementById("demo").innerHTML = "I appear when you click";
+    });
+    </script>
+
+
+    <div id="myDIV">attached a "wheel" event to a DIV element. Roll the mouse wheel over me - either up or down!</div>
+<script>
+document.getElementById("myDIV").addEventListener("wheel", myFunction);
+
+function myFunction() {
+  this.style.fontSize = "20px";
+}
+</script>
+<button onClick="window.location.reload();">Reset</button>
+</body>
+</html>
